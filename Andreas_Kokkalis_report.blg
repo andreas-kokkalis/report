@@ -1,0 +1,72 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Andreas_Kokkalis_report.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+I was expecting a `,' or a `}'---line 316 of file references.bib
+ :  
+ :  howpublished = {\url{https://github.com/shellinabox/shellinabox}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 498 of file references.bib
+ :  
+ :  year = {2004},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring Hossain699823's extra "school" field
+--line 538 of file references.bib
+Warning--can't use both author and editor fields in Nabhen2006
+Warning--empty author in hands_on_practice_MOOC
+Warning--empty booktitle in hands_on_practice_MOOC
+Warning--empty year in hands_on_practice_MOOC
+Warning--empty journal in inginious_paper
+Warning--empty year in inginious_paper
+Warning--empty publisher in ricardo_queiros_integrating
+Warning--empty year in ricardo_queiros_integrating
+Warning--empty booktitle in dua_virtualization_2014
+Warning--empty author in edurange_github
+Warning--empty booktitle in edurange_github
+Warning--empty journal in vaishnavi2015design
+Warning--there's a month but no year in vaishnavi2015design
+You've used 107 entries,
+            1791 wiz_defined-function locations,
+            903 strings with 17915 characters,
+and the built_in function-call counts, 15624 in all, are:
+= -- 1381
+> -- 453
+< -- 10
++ -- 216
+- -- 109
+* -- 359
+:= -- 2213
+add.period$ -- 354
+call.type$ -- 107
+change.case$ -- 101
+chr.to.int$ -- 0
+cite$ -- 120
+duplicate$ -- 724
+empty$ -- 2044
+format.name$ -- 109
+if$ -- 3787
+int.to.chr$ -- 0
+int.to.str$ -- 107
+missing$ -- 34
+newline$ -- 565
+num.names$ -- 72
+pop$ -- 696
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 360
+stack$ -- 0
+substring$ -- 237
+swap$ -- 158
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 13
+while$ -- 95
+width$ -- 110
+write$ -- 1079
+(There were 2 error messages)

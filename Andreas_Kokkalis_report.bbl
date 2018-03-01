@@ -1,0 +1,616 @@
+\begin{thebibliography}{100}
+
+\bibitem{assignment_mit}
+{Computer System Engineering - M.I.T. Department of EECS}.
+\newblock {Understanding TCP using tcpdump}.
+\newblock \url{http://web.mit.edu/6.033/www/assignments/handson-tcp.html}.
+\newblock [Online; accessed 2017-01-02].
+
+\bibitem{watson:hal-00692067}
+William~R. Watson and Sunnie~Lee Watson.
+\newblock {An argument for clarity: what are learning management systems, what
+  are they not, and what should they become?}
+\newblock {\em {TechTrends}}, 51(2):28--34, 2007.
+
+\bibitem{boesen_edurange:_2014}
+Stefan Boesen, Richard Weiss, James Sullivan, Michael~E. Locasto, Jens Mache,
+  and Erik Nilsen.
+\newblock {EDURange}: {Meeting} the {Pedagogical} {Challenges} of {Student}
+  {Participation} in {Cybertraining} {Environments}.
+\newblock In {\em 7th {Workshop} on {Cyber} {Security} {Experimentation} and
+  {Test} ({CSET} 14)}, San Diego, CA, August 2014. USENIX Association.
+
+\bibitem{Nabhen2006}
+Ricardo Nabhen and Carlos" Maziero.
+\newblock {\em {Education for the 21\textsuperscript{st} Century --- Impact of
+  ICT and Digital Resources: IFIP 19th World Computer Congress, TC-3,
+  Education, August 21--24, 2006, Santiago, Chile}}, chapter Some Experiences
+  in Using Virtual Machines for Teaching Computer Networks, pages 93--104.
+\newblock Springer US, Boston, MA, 2006.
+
+\bibitem{hands_on_practice_MOOC}
+Introducing hands-on experience to a massive open online course on openhpi.
+
+\bibitem{canvas_homepage}
+{Instructure, Inc}.
+\newblock {Canvas Learning Management System}.
+\newblock \url{https://www.canvaslms.com/}.
+\newblock [Online; accessed 2016-02-21].
+
+\bibitem{fonte_flexible_2013}
+Daniela Fonte, Daniela~da Cruz, Alda~Lopes Gançarski, and Pedro~Rangel
+  Henriques.
+\newblock {A flexible dynamic system for automatic grading of programming
+  exercises}.
+\newblock In {\em {OASIcs}-{OpenAccess} {Series} in {Informatics}}, volume~29.
+  Schloss Dagstuhl-Leibniz-Zentrum fuer Informatik, 2013.
+
+\bibitem{inginious_paper}
+Guillaume Derval, Anthony Gego, Pierre Reinbold, Benjamin Frantzen, and Peter
+  Van~Roy.
+\newblock {Automatic grading of programming exercises in a {MOOC} using the
+  {INGInious} platform}.
+
+\bibitem{queiros2012programming}
+Ricardo Queir{\'o}s and Jos{\'e}~Paulo Leal.
+\newblock {Programming Exercises Evaluation Systems - {An} Interoperability
+  Survey.}
+\newblock In {\em CSEDU (1)}, pages 83--90, 2012.
+
+\bibitem{ns3}
+NS-3 Consortium.
+\newblock {NS-3 Simulator}.
+\newblock \url{https://www.nsnam.org/overview/what-is-ns-3/}.
+
+\bibitem{hevner_design_2010}
+Alan Hevner and Samir Chatterjee.
+\newblock {Design {Science} {Research} in {Information} {Systems}}.
+\newblock In {\em Design {Research} in {Information} {Systems}}, volume~22,
+  pages 9--22. Springer US, Boston, MA, 2010.
+
+\bibitem{Vaishnavi}
+Vijay~K. Vaishnavi and William Kuechler, Jr.
+\newblock {\em {Design Science Research Methods and Patterns: Innovating
+  Information and Communication Technology}}.
+\newblock Auerbach Publications, Boston, MA, USA, 1st edition, 2007.
+
+\bibitem{hevner_three_2007}
+Alan~R. Hevner.
+\newblock {A three cycle view of design science research}.
+\newblock {\em Scandinavian journal of information systems}, 19(2):4, 2007.
+
+\bibitem{ALARIO2010COM}
+C.~Alario and S.~Wilson.
+\newblock {Comaprison of The Main Alternatives To The Integration of External
+  Tools in Different Platforms}.
+\newblock In {\em ICERI2010 Proceedings}, 3rd International Conference of
+  Education, Research and Innovation, pages 3466--3476. IATED, 15-17 November,
+  2010 2010.
+
+\bibitem{openEdx}
+{Open edX as an LTI Tool Provider}.
+\newblock \url{https://open.edx.org/blog/open-edx-lti-tool-provider}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{Hossain699823}
+Md.~Iqbal Hossain and Md.~Iqbal Hossain.
+\newblock {Dynamic scaling of a web-based application in a Cloud Architecture}.
+\newblock Master's thesis, KTH, Radio Systems Laboratory (RS Lab), 2014.
+
+\bibitem{lms_field_guide}
+Ryann~K Ellis.
+\newblock {Field Guide to Learning Management Systems}, 2009.
+
+\bibitem{leal2011comparative}
+Jos{\'e}~Paulo Leal and Ricardo Queir{\'o}s.
+\newblock {A comparative study on LMS interoperability}.
+\newblock {\em Higher Education Institutions and Learning Management Systems:
+  Adoption and Standardization}, page 142, 2011.
+
+\bibitem{assessment-1997}
+Wynne Harlen and Mary James.
+\newblock {Assessment and {Learning}: differences and relationships between
+  formative and summative assessment}.
+\newblock {\em Assessment in Education: Principles, Policy \& Practice},
+  4(3):365--379, November 1997.
+
+\bibitem{lms_benchmark}
+Janne~Malfroy Kevin Ashford-Rowe.
+\newblock {E-Learning Benchmark Report: Learning Management System (LMS)
+  usage}.
+\newblock
+  \url{http://www.uws.edu.au/__data/assets/pdf_file/0007/452077/Griffith_UWS_Elearning_Benchmark_Report.pdf},
+  2009.
+
+\bibitem{ISOPDF}
+ISO.
+\newblock {Information Technology Vocabulary}.
+\newblock ISO 2121317 - 2382:2015, International Organization for
+  Standardization, 2015.
+
+\bibitem{lti_def}
+{IMS GLOBAL Learning Consortium}.
+\newblock {Learning Tools Interoperability}
+  \textsuperscript{\textregistered}({LTI}\textsuperscript{\textregistered)}.
+\newblock
+  \url{http://www.imsglobal.org/activity/learning-tools-interoperability}.
+\newblock [Online; accessed 2016-02-23].
+
+\bibitem{ricardo_queiros_integrating}
+Ricardo Queir{\'o}s, Jos{\'e}~Paulo Leal, and Jos{\'e} Paiva.
+\newblock {Integrating rich learning applications in {LMS}}.
+\newblock In {\em State-of-the-{Art} and {Future} {Directions} of {Smart}
+  {Learning}}.
+
+\bibitem{ims_lis}
+{IMS Learning Information Services}.
+\newblock \url{https://www.imsglobal.org/lis/}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{ruby_sinatra}
+{Ruby Sinatra} - official documentation page.
+\newblock \url{http://www.sinatrarb.com/documentation.html}.
+\newblock [Online; accessed 2016-07-17].
+
+\bibitem{Harris:2011:SUR:2208042}
+Alan Harris and Konstantin Haase.
+\newblock {\em {Sinatra: Up and Running}}.
+\newblock O'Reilly Media, Inc., 1st edition, 2011.
+
+\bibitem{lti_example_canvas}
+{LTI Outcome Service Example using Canvas LMS}.
+\newblock \url{https://github.com/instructure/lti_example}.
+\newblock [Online; accessed 2016-04-23].
+
+\bibitem{ims_gws}
+{IMS Global Learning Consortium including the IMS Logos, Learning Tools
+  Interoperability\textsuperscript{\tiny\textregistered}
+  (LTI\textsuperscript{\tiny\textregistered})}.
+\newblock {IMS Global General Web Services}.
+\newblock \url{https://www.imsglobal.org/gws/index.html}.
+\newblock [Online; accessed 2016-07-27].
+
+\bibitem{lti_impl_guide}
+{IMS Global Learning Consortium including the IMS Logos, Learning Tools
+  Interoperability\textsuperscript{\tiny\textregistered}
+  (LTI\textsuperscript{\tiny\textregistered})}.
+\newblock {IMS Global Learning Tools
+  Interoperability\textsuperscript{\tiny\texttrademark} Implementation Guide}.
+\newblock \url{https://www.imsglobal.org/specs/ltiv1p1/implementation-guide}.
+\newblock [Online; accessed 2016-07-27].
+
+\bibitem{oauth_protocol}
+Ed. E.~Hammer-Lahav.
+\newblock {The OAuth 1.0 protocol}, April 2010.
+
+\bibitem{openssl}
+{OpenSSL Software Foundation.}
+\newblock {OpenSSL} cryptography and {SSL/TLS} toolkit.
+\newblock \url{https://www.openssl.org/}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{openssl_self_signed}
+Marcus Redivo.
+\newblock Creating and using {SSL} certificates.
+\newblock \url{http://www.eclectica.ca/howto/ssl-cert-howto.php}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{openssl_manpage}
+{OpenSSL Software Foundation.}
+\newblock {OpenSSL} - official documentation of command \texttt{req}.
+\newblock \url{https://www.openssl.org/docs/manmaster/apps/req.html}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{openssl_config}
+Phil Dibowitz.
+\newblock Openssl.conf walkthru.
+\newblock \url{https://www.phildev.net/ssl/opensslconf.html}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{edu_appcenter}
+{An open LTI app collection}.
+\newblock https://www.eduappcenter.com/.
+\newblock [Online; accessed 2016-07-11].
+
+\bibitem{instructure_inc}
+{Instructure Inc.}
+\newblock {Instructure}.
+\newblock \url{https://www.instructure.com/}.
+\newblock [Online; accessed 2016-07-17].
+
+\bibitem{dua_virtualization_2014}
+Rajdeep Dua, A~Reddy Raja, and Dharmesh Kakadia.
+\newblock {Virtualization vs {Containerization} to {Support} {PaaS}}.
+\newblock pages 610--614. IEEE, March 2014.
+
+\bibitem{url_lxc}
+{Linux Containers - LXC}.
+\newblock \url{https://linuxcontainers.org/lxc/introduction/}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{man_namespaces}
+{Linux Programmer's Manual, overview of Linux namespaces}.
+\newblock \url{http://man7.org/linux/man-pages/man7/namespaces.7.html}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{rosen2014linux}
+Rami Rosen.
+\newblock {Linux containers and the future cloud}.
+\newblock {\em Linux J}, 240, 2014.
+
+\bibitem{url_docker}
+{Docker Inc.}
+\newblock {Docker}.
+\newblock \url{https://www.docker.com/}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{url_libcontainer}
+{Docker Inc.}
+\newblock {Libcontainer implementation}.
+\newblock
+  \url{https://github.com/opencontainers/runc/tree/master/libcontainer}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{url_libvirt_lxc}
+{LXC container driver}.
+\newblock \url{https://libvirt.org/drvlxc.html}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{url_systemd_nspawn}
+{systemd-nspawn}.
+\newblock
+  \url{https://www.freedesktop.org/software/systemd/man/systemd-nspawn.html}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{url_oci}
+{The Linux Foundation\textsuperscript{\textregistered}}.
+\newblock {Open Container Initiative}.
+\newblock \url{https://www.opencontainers.org/about}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{url_docker_command_line}
+{Docker Inc.}
+\newblock {Docker Command Line Reference}.
+\newblock \url{https://docs.docker.com/engine/reference/commandline}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{url_docker_remote_api}
+{Docker Remote API}.
+\newblock \url{https://docs.docker.com/engine/reference/api/docker_remote_api}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{url_pseudo_tty}
+Michael Kerrisk.
+\newblock {Unix pseudoterminal interface}.
+\newblock \url{http://man7.org/linux/man-pages/man7/pty.7.html}, 2005.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{web_based_ssh}
+{Web based SSH}.
+\newblock \url{https://en.wikipedia.org/wiki/Web-based_SSH}.
+\newblock [Online; accessed 2016-11-19].
+
+\bibitem{gate_one}
+Dan McDougall.
+\newblock {GateOne}.
+\newblock \url{https://github.com/liftoff/GateOne}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{shellinabox}
+Markus Gutschk.
+\newblock {shellinabox}.
+
+\bibitem{vt100}
+Digital~Equipment Corporation.
+\newblock {\em {VT100 Series Technical Manual}}, 1979.
+
+\bibitem{ajax}
+{Holdener, III, Anthony T.}
+\newblock {\em Ajax: The Definitive Guide}.
+\newblock O'Reilly, first edition, 2008.
+
+\bibitem{shellinabox_sspreitzer}
+Sascha Spreitzer.
+\newblock {shellinabox for docker}.
+\newblock \url{https://github.com/sspreitzer/docker-shellinabox}.
+\newblock [Online; accessed 2016-11-20].
+
+\bibitem{bridge_linux_foundation}
+The~Linux Foundation.
+\newblock {The Linux foundation wiki - bridge}.
+\newblock \url{https://wiki.linuxfoundation.org/networking/bridge}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{docker0_interface}
+{Docker Inc.}
+\newblock Docker documentation - customize the docker0 bridge.
+\newblock
+  \url{https://docs.docker.com/engine/userguide/networking/default_network/custom-docker0/}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{edurange_webpage}
+{The Evergreen State College Olympia, Washington}.
+\newblock {EDURange: A Cybersecurity Competition Platform to Enhance
+  Undergraduate Security Analysis Skills}.
+\newblock \url{http://blogs.evergreen.edu/edurange/}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{aws_ec2}
+{Amazon Elastic Compute Cloud} - {Amazon EC2}.
+\newblock \url{https://aws.amazon.com/ec2/}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{edurange_github}
+{EDURange Github project}.
+\newblock 2014.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{glue}
+Carlos Alario{-}Hoyos, Miguel~L. Bote{-}Lorenzo, Eduardo
+  G{\'{o}}mez{-}S{\'{a}}nchez, Juan~I. Asensio{-}P{\'{e}}rez, Guillermo
+  Vega{-}Gorgojo, and Adolfo Ruiz{-}Calleja.
+\newblock {GLUE!: An architecture for the integration of external tools in
+  Virtual Learning Environments}.
+\newblock {\em Computers {\&} Education}, 60(1):122--137, 2013.
+
+\bibitem{inginious_homepage}
+{ING}inious by {U}niversit{\'{e}} {C}atholique de {L}ouvain.
+\newblock \url{http://inginious.org/}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{inginious_github}
+{Github repository of INGInious}.
+\newblock \url{https://github.com/UCL-INGI/INGInious}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{inginious_doc}
+{Technical documentation of INGInious}.
+\newblock \url{http://inginious.readthedocs.org}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{inginious_teacher_doc}
+{Teacher documentation of INGInious}.
+\newblock
+  \url{http://inginious.readthedocs.io/en/latest/teacher_documentation.html}.
+\newblock [Online; accessed 2016-02-28].
+
+\bibitem{vaishnavi2015design}
+Vijay~K. Vaishnavi and William Kuechler, Jr.
+\newblock {Design Science Research in Information Systems}.
+\newblock January.
+
+\bibitem{ruby_on_rails}
+{Ruby on Rails} - official web page.
+\newblock \url{http://rubyonrails.org/}.
+\newblock [Online; accessed 2016-07-17].
+
+\bibitem{canvas_getting_started}
+{Instructure, Inc}.
+\newblock {Canvas LMS Istallation Quick Start Wiki Page}.
+\newblock \url{https://github.com/instructure/canvas-lms/wiki/Quick-Start}.
+\newblock [Online; accessed 2016-11-07].
+
+\bibitem{vagrant}
+HashiCorp.
+\newblock {Vagrant}.
+\newblock \url{https://www.vagrantup.com/}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{virtualbox}
+Oracle.
+\newblock {VirtualBox}.
+\newblock \url{https://www.virtualbox.org/}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{andreas_canvas_installation}
+Andreas Kokkalis.
+\newblock {Canvas LMS installation using Vagrant}.
+\newblock \url{https://github.com/andreas-kokkalis/canvas_lms_vagrant}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{golang_doc}
+{The Go Programming Language}.
+\newblock \url{https://golang.org/}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{Donovan:2015:GPL:2851099}
+Alan~A.A. Donovan and Brian~W. Kernighan.
+\newblock {\em {The Go Programming Language}}.
+\newblock Addison-Wesley Professional, 1st edition, 2015.
+
+\bibitem{go_net_http}
+{Go package net/http}.
+\newblock \url{https://golang.org/pkg/net/http/}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{httprouter_pkg}
+{Julien Schmidt}.
+\newblock {HttpRouter - a trie based high performance HTTP request router}.
+\newblock \url{https://github.com/julienschmidt/httprouter}.
+\newblock [Online; accessed 2016-12-07].
+
+\bibitem{docker_api_client_library}
+{Docker Inc.}
+\newblock {Go implementation of the Docker Remote API library}.
+\newblock \url{https://godoc.org/github.com/docker/docker/client}.
+\newblock [Online; accessed 2016-08-07].
+
+\bibitem{golang_context}
+{Go package context}.
+\newblock \url{https://golang.org/pkg/context/}.
+\newblock [Online; accessed 2016-12-07].
+
+\bibitem{golang_specification}
+{The Go Programming Language Specification}.
+\newblock \url{https://golang.org/ref/spec#The_zero_value}.
+\newblock [Online; version 2016-05-31].
+
+\bibitem{docker_ckeckpoint_and_restore}
+{Docker Inc.}
+\newblock {Docker Checkpoint and Restore}.
+\newblock
+  \url{https://github.com/docker/docker/blob/master/experimental/checkpoint-restore.md}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{redis}
+{Redis}.
+\newblock \url{https://redis.io/}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{go-redis}
+{Type-safe Redis client for Golang}.
+\newblock \url{https://github.com/go-redis/redis}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{postgresql}
+{PostgreSQL - open source object relational database system}.
+\newblock \url{https://www.postgresql.org/}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{database_sql_pkg}
+{Go package database/sql}.
+\newblock \url{https://golang.org/pkg/database/sql/}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{lib_pq_pkg}
+{Pure Go Postgres driver for database/sql}.
+\newblock \url{https://github.com/lib/pq}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{jquery_ajax}
+{The jQuery Foundation}.
+\newblock ajax function of jquery for performing asynchronous http (ajax)
+  requests.
+\newblock \url{https://api.jquery.com/jquery.ajax/}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{rfc_status_codes}
+J.Reschke R.~Fielding.
+\newblock {Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content}, June
+  2014.
+
+\bibitem{tcpdump}
+{tcpdump - command line packet analyzer}.
+\newblock \url{http://www.tcpdump.org/}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{golang_lti}
+Jordi Collell.
+\newblock {Golang LTI - Go Tools for working with the LTI specification}.
+\newblock \url{https://github.com/jordic/lti}.
+\newblock [Online; accessed 2016-12-18].
+
+\bibitem{software_testing_levels}
+{Software Testing Levels}.
+\newblock
+  \url{http://softwaretestingfundamentals.com/software-testing-levels/}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{martin2017clean}
+Robert~C. Martin.
+\newblock {\em {Clean Architecture: A Craftsman's Guide to Software Structure
+  and Design}}.
+\newblock Robert C. Martin Series. Prentice Hall, Boston, MA, 2017.
+
+\bibitem{clean_arch_go}
+Manuel Kiessling.
+\newblock {Applying the Clean Architecture to Go applications}.
+\newblock
+  \url{http://manuel.kiessling.net/2012/09/28/applying-the-clean-architecture-to-go-applications/}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{golang_testing}
+{Go package testing}.
+\newblock \url{https://golang.org/pkg/testing/}.
+\newblock [Online; accessed 2017-12-28].
+
+\bibitem{golang_coverage}
+Rob Pike.
+\newblock {The Go Blog, The cover story}.
+\newblock \url{https://blog.golang.org/cover}.
+\newblock [Online; accessed 2017-12-28].
+
+\bibitem{instrumentation}
+IBM~Knowledge Center.
+\newblock {Source code instrumentation overview}.
+\newblock
+  \url{https://www.ibm.com/support/knowledgecenter/SSSHUF_8.0.0/com.ibm.rational.testrt.doc/topics/cinstruovw.html}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{gcov_man}
+{\em {gcov - A Test Coverage Program}}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{travis_ci}
+{\textsuperscript{\tiny\textregistered}Travis CI, GmbH}.
+\newblock {Travis CI}.
+\newblock \url{https://about.travis-ci.com/}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{continuous_integration}
+John~Ferguson Smart.
+\newblock {\em {Jenkins: The Definitive Guide}}.
+\newblock O'Reilly Media, Inc., 2011.
+
+\bibitem{travis_dock_server_url}
+{Travis builds of dock server github project}.
+\newblock \url{https://travis-ci.org/andreas-kokkalis/dock_server/}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{github_dock_server_url}
+{Andreas Kokkalis}.
+\newblock {Github project of On-demand virtual laboratory environments for
+  Internetworking e-learning: A first step using docker containers}.
+\newblock \url{https://github.com/andreas-kokkalis/dock_server}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{codecov}
+{Codecov}.
+\newblock {Home page of Code Coverage tool}.
+\newblock \url{https://codecov.io/}.
+\newblock [Online; accessed 2017-12-29].
+
+\bibitem{codecov_dock_server_url}
+{Source code statement coverage reports of the dock server GitHub project}.
+\newblock \url{https://codecov.io/gh/andreas-kokkalis/dock\_server}.
+\newblock [Online; accessed 2018-01-03].
+
+\bibitem{ginkgo}
+{Onsi Fakhouri}.
+\newblock {A Golang Behavior Driven Design Testing Framework}.
+\newblock \url{https://onsi.github.io/ginkgo/}.
+\newblock [Online; accessed 2018-01-03].
+
+\bibitem{smart2014bdd}
+J.F. Smart.
+\newblock {\em {BDD in Action: Behavior-Driven Development for the Whole
+  Software Lifecycle}}.
+\newblock Manning Publications Company, 2014.
+
+\bibitem{json_regex_diff}
+Inc. Bazaarvoice.
+\newblock {JSON to JSON diff tool}.
+\newblock \url{https://github.com/bazaarvoice/json-regex-difftool}.
+
+\bibitem{apache2}
+Apache license, version 2.0.
+
+\bibitem{docker_swarm}
+{Docker Inc.}
+\newblock Docker swarm.
+\newblock \url{https://www.docker.com/products/docker-swarm}.
+\newblock [Online; accessed 2017-01-02].
+
+\bibitem{docker_swarm_api}
+{Docker Inc.}
+\newblock Docker swarm api.
+\newblock \url{https://docs.docker.com/v1.9/swarm/api/swarm-api/}.
+\newblock [Online; accessed 2017-01-02].
+
+\bibitem{user_experience}
+Sari Kujala, Virpi Roto, Kaisa V\"{a}\"{a}n\"{a}nen-Vainio-Mattila, Evangelos
+  Karapanos, and Arto Sinnel\"{a}.
+\newblock {UX Curve: A Method for Evaluating Long-term User Experience}.
+\newblock {\em Interact. Comput.}, 23(5):473--483, September 2011.
+
+\end{thebibliography}

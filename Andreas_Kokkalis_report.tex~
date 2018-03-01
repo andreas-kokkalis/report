@@ -1,0 +1,431 @@
+\documentclass[a4paper,11pt]{kth-mag}	% template
+\usepackage[T1]{fontenc}				% template
+\usepackage{textcomp}					% template
+\usepackage{lmodern}					% template
+\pagestyle{plain}
+
+\usepackage[latin1]{inputenc}			% character encoding
+\usepackage[swedish,english]{babel}		% language
+\usepackage{modifications}				% template modifications by CSC department of KTH
+
+\usepackage{graphicx}					% figures
+\usepackage{caption}					% figure captions
+\usepackage{subcaption}
+
+\usepackage{float} 						% placement of figures
+
+\usepackage[ruled,vlined]{algorithm2e}	% algorithms
+\usepackage{algpseudocode}				% pseudocode
+\usepackage{mathtools}					% formating mathematical symbols
+
+\usepackage[printonlyused]{acronym} 	% for acronyms
+
+\usepackage{xcolor}
+\definecolor{lightgray}{gray}{0.85}
+\usepackage[color=lightgray]{todonotes}					% todo notes
+
+\hyphenpenalty=5000
+\tolerance=1000
+
+\usepackage{url}
+
+\usepackage{listings}
+\lstset{language=SQL,frame=lines, basicstyle=\ttfamily, keywordstyle=\color{blue}\ttfamily, tabsize=2}
+
+\usepackage{array}
+
+%\usepackage{hyperref}					% references
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+\title{Facilitating student understanding of Internetworking via e-learning}
+%\subtitle{subtitle}
+
+\foreigntitle{}
+\author{Andreas Kokkalis}
+\date{May 2016}
+\blurb{Master's Thesis at ICT\\Supervisor: Anders Västberg\\Examiner: Gerald Q. Maguire Jr.}
+\trita{TRITA xxx yyyy-nn}
+\begin{document}
+\frontmatter
+\pagestyle{empty}
+\removepagenumbers
+--\maketitle
+
+\selectlanguage{english}
+\begin{abstract}
+\acp{LMS} are widely used in higher education to improve the learning, teaching, and administrative tasks for both students and instructors. Such systems enrich the educational experience by integrating a wide range of services, such as  on-demand course material and training, thus empowering students to achieve their learning outcomes at their own pace. 
+
+Courses in various sub\nobreakdash-fields of Computer Science that seek to provide rich \ac{elearning} experience depend on exercise material being offered in the forms of quizzes, programming exercises, laboratories, simulations, etc.
+Providing hands on experience in courses such as Internetworking could be facilitated by providing laboratory exercises based on virtual machine environments where the student studies the performance of different internet protocols  under different conditions (such as different throughput bounds, error rates, and patterns of changes in these conditions). Unfortunately, the integration of such exercises and their tailored virtual environments is not yet very popular in \acp{LMS}.
+
+This thesis project investigates the generation of on-demand virtual exercise environments using cloud infrastructures and integration with an \ac{LMS} to provide a rich \ac{elearning} in an Internetworking course.
+
+\todo[inline,caption={}]{\\\footnotesize
+\begin{itemize}
+\item e-learning, lms, capabilites
+\item Importance of hands on training, lack of online exercises for internetworking
+\item briefly mention the goals / outcome of the thesis
+\end{itemize}
+}
+\end{abstract}
+
+\clearpage
+\begin{foreignabstract}{swedish}
+
+\end{foreignabstract}
+
+%acknowledgements
+\clearpage
+\section*{Acknowledgements}
+I would like to acknowledge ...
+
+% adding table of contents
+\clearpage
+\tableofcontents*
+
+% adding the list of figures
+\newpage
+\listoffigures*
+
+% adding the list of tables
+%\newpage
+\listofalgorithms
+\listoftables*
+
+% remove empty page before chapter
+% add the list of acronym and abbreviations
+\openany
+\chapter*{List of Acronyms and Abbreviations}
+\acresetall
+\begin{acronym}
+\acro{elearning}[e\string-learning]{electronic learning}
+\acro{LMS}{Learning Management System}
+\acrodefplural{LMS}{Learning Management Systems}
+\acro{LTI}{Learning Tools Interoperability}
+\acro{LIS}{Learning Information Services}
+\acro{EC2}{Elastic Compute Cloud}
+\acro{IT}{Information Technology}
+\acro{IS}{Information Systems}
+\acro{AWS}{Amazon Web Services}
+\acro{API}{Application Programming Interface}
+\acro{NSF}{National Science Foundation}
+\acro{KTH}{Kungliga Tekniska Högskolan}
+\acro{TC}{Tool Consumer}
+\acro{TP}{Tool Provider}
+\acro{XML}{Extensible Markup Language}
+\acro{GLUE!}{Group Learning Uniform Environment}
+\acro{SCROM}{Sharable Content Object Reference Model}
+\acro{MOOC}{Massive Open Online Course}
+\acrodefplural{MOOC}{Massive Open Online Courses}
+\acro{LXC}{Linux Containers}
+\acro{VM}{Virtual Machine}
+\acro{CPU}{Central Processing Unit}
+
+\end{acronym}
+
+% add again empty page before chapter
+\openright
+\mainmatter
+\pagestyle{newchap}
+
+% % % % % % % % % % % % % % % % % % %
+%		CHAPTER INTRODUCTION		%
+% % % % % % % % % % % % % % % % % % %
+\chapter{Introduction}
+The use of \ac{elearning} technologies has been well established in modern education to assist both students and instructors in their learning, teaching, and administrative tasks. One of the \ac{elearning} technologies most widely adopted by the academic community is \acp{LMS}. A \ac{LMS} is a software application that handles all aspects of the learning process \cite{watson:hal-00692067}, enabling instructors to design rich \ac{elearning} courses and students to experience self\nobreakdash-paced learning using a variety of features, such as on\nobreakdash-demand course material, video lectures, automatic delivery and evaluation of assignments, collaboration tools, etc.
+
+Many courses, especially in various sub\nobreakdash-fields of Computer Science depend on training events in the form of programming assignments, laboratory exercises, simulations, etc. These activities are crucial for students to gain hands\nobreakdash-on experience with complex concepts and systems \cite{boesen_edurange:_2014}. Although \acp{LMS} support on\nobreakdash-line training events, such as interactive quizzes with automatic evaluation and analysis of results, providing training events that depend on using complex virtual environments and software are not yet very popular (and hence not widely supported or used).
+
+One of the main advantages of using an \ac{LMS} is that it supports the integration of external applications to provide personalized, domain specific \ac{elearning}, such as messaging and video streaming services, on\nobreakdash-line office suites, collaboration tools, or even training environments with exercises tailored to the needs of a specific course.
+
+%The use of \ac{elearning} technologies has been well established in modern education to assist learning, teaching and administrative tasks for both students and instructors. One of the most commonly used \ac{elearning} technologies are \acp{LMS} which are designed to handle all aspects of the learning  process\cite{watson:hal-00692067}. Such systems automate the administration, tracking and reporting of training events \cite{lms_field_guide} and offer a wide range of services such as on\nobreakdash-demand delivery of course material and training. From the instructor's perspective, a \ac{LMS} provides functionality to design courses with rich content such as video lectures, interactive exercises in forms of quizzes, automatic evaluation of assignments, discussion forums etc. One of the major pedagogical advantages of on\nobreakdash-line courses is that they empower students to achieve their learning outcomes at their own pace. 
+%
+%Although \acp{LMS} can support several types of exercise material, integrating practical exercises such as programming assignments, laboratories, simulations is quite trivial. Several courses in fields of Computer Science depend on similar training setups. Providing hands on experience in an Internetworking course, is very important to achieve understanding of complex systems and concepts \cite{hands_on_practice_MOOC}. 
+%
+%When designing laboratory exercises for a \ac{LMS}, one has to meet several requirements. From a student's perspective, the requirements can be accessibility via the \ac{LMS}, scalability to meet the requirements of a large classroom and the ability to provide constructive feedback. From an instructor's perspective, the virtual training environments should be easily modified to meet the needs of different exercises, and should provide means for automating the evaluation and reporting of assignments.\todo{\footnotesize the syntax is bad}
+%
+%The integration of such virtual training environments in \acp{LMS} is not yet popular. This project aims to design a software framework that integrates with Canvas \ac{LMS} to provide rich \ac{elearning} using virtual learning environments for practical training of an Internetworking course. 
+
+
+\section{Background}
+
+Hands\nobreakdash-on experience is very important to achieve understanding of complex systems and concepts. For example, when studying computer networks, laboratory exercises are a common student activity. An Internetworking course often involves students studying the performance of different Internet protocols under different conditions (such as varying throughput bounds, error rates, and patterns of changes in network conditions).
+
+These experiments depend on specific software, network topologies, and local or virtual hardware. Traditional approaches for realizing such environments depend upon the student's own hardware or on\nobreakdash-site computer labs with pre\nobreakdash-configured software\cite{Nabhen2006}. More modern approaches involve remote access to virtual machines running on central servers or cloud infrastructures \cite{hands_on_practice_MOOC}.
+
+Currently \acp{LMS} do not have built\nobreakdash-in support for such laboratory environments. However, one of the main advantages of designing an on\nobreakdash-line course on top of an \ac{LMS} that supports the integration of extenal applications is to provide tailored functionality for the course's and student's specific needs. Today, many \acp{LMS}, such as Instructure Inc.'s Canvas \cite{canvas_homepage} \ac{LMS}, implement the IMS Global Learning Consortium Tools Interoperability\textsuperscript{\textregistered}  (LTI\textsuperscript{\textregistered}) specification. \ac{LTI} allows the exchange of information between the \ac{LMS} and third party components, thus exposing internal functionality of the \ac{LMS} to external applications in a controlled manner.
+
+Supporting virtual laboratory environments in a \ac{LMS} in order to meet the needs of an Internetworking course, requires the design of a software framework that implements the \ac{LTI} interoperability specification in order to exchange relevant information between the laboratory environment and the \ac{LMS}.
+
+\section{Problem definition}
+Hands on experience is very important aspect of the learning process in several fields of Computer Science, including computer networks. Understanding the domain specific concepts and problems of an Internetworking course, depends greatly on exercise material and laboratory practice. Today, such exercises, are not usually designed to extract suitable analytics for the instructor (as an instructor ideally wishes to evaluate each student's level of understanding of each of the different concepts covered in an exercise). Assessing the student's understanding is currently achieved via using additional training material, such as quizzes or assignments in forms of reports which are manually evaluated by instructors or by other students in the form of peer reviewing. These alternative methods both introduce a delay in feedback to the student (hence reducing the student's rate of learning) and are not scalable (for example, preventing their use in \acp{MOOC}).
+
+Supporting an on\nobreakdash-line version of an Internetworking course through a \ac{LMS} that enables students to achieve the learning outcomes at their own pace, depends greatly on designing interactive practice environments. Such environments should be easily modified by the instructor to fit the needs of different exercises. Moreover, the environment must  provide feedback for both students and teachers. Although today \acp{LMS} support a variety of training events, such as quizzes and assignments through integration of external services, on\nobreakdash-line virtual laboratory environments that fulfill the requirements of an Internetworking course are not yet well supported and hence not widely used. 
+
+However, similar practice environments are very popular in on\nobreakdash-line courses that teach programming languages, often in form of standalone web applications or \ac{LTI} integrations in \acp{LMS} \cite{inginious_paper,queiros2012programming}. In this form of laboratory practice, the student develops a program to solve an exercise. The submitted code is evaluated (compiled and executed) in a remote virtual environment that automatically produces grades and constructive feedback to both students and instructors.
+
+This project aims to design a software framework that supports interactive training material that extracts suitable analytics of the learning process for both students and instructors, and integrates with a \ac{LMS} to provide a rich \ac{elearning} experience.\todo{\footnotesize discard this sentence ...}
+
+\section{Goals}
+\todo[inline]{\footnotesize informal}
+The design of such a laboratory environment for an  Internetworking course has to meet several user requirements from the perspective of both students and instructors, and integrate with a \ac{LMS} to offer a rich \ac{elearning} experience. The expected outcome of this project is a software framework that supports instantiation of on\nobreakdash-demand laboratory environments using cloud based technologies to enrich the learning experience of students, allowing them to proceed at their own pace. Additionally, the framework should enable a teacher to customize the environment according to different exercises' requirements, and provide the instructor with constructive feedback about each student's progress and understanding.
+
+The process of designing this framework can be realized by achieving the following goals:
+\begin{itemize}
+\item Easily build virtual laboratory environments,
+\item On demand availability of these environments should enable students to practice whenever they want, i.e, be self-paced, 
+\item The framework should support evaluation and analysis methods to be applied to the exercise in a way that is useful for both instructors and students.
+\item Integration of the framework with the \ac{LMS} should enable students to access the training environments via the LMS, and
+\item The method of integration of such exercise environments should be usable by others - thus an important part of this thesis project is documenting the selected method to facilitate the integration of a diverse set of external environments (for example, an ns-3 simulator configured for a particular simulation).
+\end{itemize}
+
+\section{Research Methodology}
+
+Design science research addresses important unsolved problems in unique or innovative ways or solved problems in more effective or efficient ways. It focuses on the design and construction of \ac{IT} artifacts that have utility in real-world, application environments. The designed artifacts, as the outcome of the research process, aim to improve domain\nobreakdash-specific systems and processes  \cite{hevner_design_2010, Vaishnavi}. The utility, quality, and adequacy  of a design artifact, is thoroughly evaluated under varying experimental setups to verify that it successfully fulfills the requirements.
+
+Designing, in several research fields, including \ac{IT}, is an iterative process of planning, generating alternatives, and selecting a satisfactory outcome. Design science research, although it is not performed using strictly defined processes, can be summarized by three closely related cycles of activities (these cycles are the relevance cycle, the rigor cycle, and the design cycle)\cite{hevner_three_2007}, that act as guidelines for designing, constructing, and evaluating an artifact. The relevance cycle establishes the application context that not only provides the requirements for the research as inputs, but also defines acceptance criteria for the evaluation of the research results. The rigor cycle provides past knowledge to the research project to ensure its innovation. It is contingent on the researchers to thoroughly research and reference this knowledge base in order to guarantee that the designs produced are research contributions and not routine designs based upon the application of well-known processes. The central Design Cycle iterates between the core activities of building and evaluating the design artifacts and processes of the research \cite{hevner_design_2010}, until the acceptance criteria, as defined in the Relevance Cycle, are met.
+
+This project is carried out using the design science research approach. The resulting software and documentation attempt to solve the problem of designing and realizing a framework for rich on-line laboratory environments for an Internetworking, e-learning course that can be hosted by a specific learning management system (Canvas LMS). The two different domains that define the context of this problem are the computer networks course domain, and the \ac{LMS} along with the integration of external applications into Canvas.
+
+\section{Deliminations}
+\todo[inline]{\footnotesize informal}
+This project addresses the problem of designing and integrating virtual laboratory environments to support e\nobreakdash-learning in an \ac{LMS} for an Internetworking course. The laboratory framework, the expected outcome of this project, has to fulfill several requirements: usability for different types of users (instructor, administrator, and student,), integration into the Canvas \ac{LMS} via the \acs{LTI} specification, and satisfy the laboratory and pedagogical challenges of this particular course. 
+Although there are different specifications for integrating external applications and services into a \ac{LMS} \cite{ALARIO2010COM}, this project addresses only the \ac{LTI} specifications, as this method is supported by Canvas (along with many other \acp{LMS}, for example \ac{LTI} can be used together with edX as either a consumer or producer\cite{openEdx}). The design of the laboratory framework, is designed to suit the needs of a typical classroom (in this case approximately 30 students), thus its scalability is limited.
+
+Testing the scalability of the designed system regarding the number of users is outside of the scope of this thesis project. However, a system might be scaled up on \ac{AWS} by using larger instances (vertical scaling) or by creating multiple instances (horizontal scaling). Additionally, scaling up and down of services in clouds has been invested by others \cite{Hossain699823}.
+
+\section{Structure of the thesis}
+
+
+\chapter{Background}
+
+\section{LMS}
+\acp{LMS} are software applications that automate the training, teaching, and administrative tasks of the learning process \cite{watson:hal-00692067}. They have been widely adopted by higher education institutions to automate their organizational functions and provide a rich \ac{elearning} experience for both instructors and students.
+
+Such systems are designed to provide self-guided services; rapid delivery and composition of learning material; tracking and reporting of progress through training programs, classroom, or on\nobreakdash-line events; personalized content; and centralization and automation of administration \cite{lms_field_guide}. From a learner's perspective the most common use cases of a \ac{LMS} are planning ones own learning experience and collaboration with colleagues; while from an instructor's perspective the most common use cases are the design and delivery of educational content along with tracking and analysis of students' learning evolution \cite{leal2011comparative}.
+
+The main functionality of a \ac{LMS} concerns content organization and delivery, communication and collaboration, and assessment\footnote{
+
+Formative assessment is performed by teachers during the learning process, to modify and improve the teaching and learning activities. It is based on observation of students' individual efforts and development; thus, having a qualitative and diagnostic nature.
+
+Summative assessment, performed by both instructors and students, is based on public criteria that aim to measure student's achieving of the course learning outcomes. \cite{assessment-1997}
+
+} of student's learning process. Some of the most commonly used features of an \ac{LMS} for \ac{elearning} are video streaming of lectures, on\nobreakdash-line notes and presentations, quizzes and practice environments, automatic evaluation of assignments (usually exercises with predefined input and output), wikis, discussion forums, etc \cite{lms_benchmark}.These  services are either offered directly by the LMS or by integrating external applications that are designed according to specific interoperability standards. Section \ref{sec_LTI} describes this interoperability and integration in detail.
+
+There are several \acp{LMS} in the market that are used by multiple institutions. In the scope of this project the chosen learning management platform is Canvas \cite{canvas_homepage}. This LMS was chosen because the system is open source, supports a well defined interoperability specification, and was selected earlier this year by \acs{KTH} as their future \ac{LMS}.                                                                                                                                                                                                                                                                                    
+
+\todo[inline]{\footnotesize You might take a look at http://www.internet2.edu/products-services/cloud-services-applications/canvas/ \\
+Canvas SaaS
+}
+
+\section{LTI}\label{sec_LTI}
+
+Interoperability is the ability to communicate, execute programs, or transfer data among functional units in a manner that requires the user to have little or no knowledge of the unique characteristics of those units \cite{ISOPDF}. Designing an \ac{elearning} environment often requires the user of several services that communicate with each other to exchange information in a formal, standardized way.
+
+The IMS Global Learning Consortium Tools Interoperability (LTI) specification establishes a standard way of integrating rich learning applications (often remotely hosted and provided through third-party services) with platforms, such as \acp{LMS}, portals, learning object repositories, or other educational environments \cite{lti_def}. The main goal of \ac{LTI} is to standardize the process of building links between learning tools and the \ac{LMS} \cite{ricardo_queiros_integrating}. This section focuses on \ac{LTI} 1.1, as this version of the specification is implemented by the Canvas \ac{LMS}.
+
+There are two major pieces of software involved in \ac{LTI}. The first is called \ac{TC} and it refers to the software (such as an \ac{LMS}) that consumes the output of external tools, and the second, is the \ac{TP} which provides an external tool for use by the \ac{TC}. In the context of this project, the laboratory environment is the \ac{TP} and the \ac{LMS} is the \ac{TC}. Communication between providers and consumers is bidirectional. Figure \ref{fig:tc-tp} presents an overview of the interaction of the different \ac{LTI} components and types of users. 
+\todo[inline]{I think that you need to say more about the actual LTI protocol, perhaps even giving some code snippets to show how it works.}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/tc-tp}
+	\caption[Overview of LTI]{Overview of LTI}
+	\label{fig:tc-tp}
+\end{figure}
+\todo[inline]{Draw your own figure and cite the source which you were inspired by.}
+
+A \ac{TP} often requires to access to course related information, such as people, groups, memberships, courses, and outcomes. This information along with standardized ways of retrieving it are defined by the IMS Global Learning Consortium \ac{LIS} specification \cite{ims_lis}. These services can be provided either by the \ac{TC} or by a third party system. Figure \ref{fig:lis} shows how a \ac{TP} can communicate with LIS services. In this example the \ac{TC} performs a LTI launch and provides the \ac{TP} with information (LIS pointers) giving it acces to the LIS services.
+\todo[inline]{You need more of an explanation about how the TP calls on the LIS services. I would suggest adding some code snippets as examples.}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/lis}
+	\caption[A TP using LIS services]{A TP using LIS services}
+	\label{fig:lis}
+\end{figure}
+\todo[inline]{Draw your own figure and cite the source which you were inspired by.}
+
+
+\section{Efforts to provide on-line exercise material}
+Traditional practice events in Computer Science involve laboratory environments and exercises based on virtual hardware and domain specific software. One of the problems is creating and managing these environments. Previously such material was packaged in virtual machines or run in an isolated environment (such as a sandbox or linux container that is mentioned in \ref{sec_LXC}).
+
+With the rapid growth of e-learning courses, the need for on-line exercise material has grown. Efforts in fields of cybersecurity include "A Comparison of Virtual Lab Solutions for Online Cyber Security Education"\cite{son_comparison_2012}, "Top 10 Hands-on Cybersecurity Exercises"\cite{top_10_cybersecurity_exercises},"" ... 
+\todo[inline]{\footnotesize Draft}
+
+In addition to the environment, there is a need for domain specific source material. Some useful references and sources for exercise material regarding networking include:
+\begin{itemize}
+\item Hands-On Experience to a Massive Open Online Course on openHPI
+\item Some Experiences in Using Virtual Machines for Teaching Computer Networks
+\item V-Lab: A Mobile Virtual Lab for Network Security Studies
+\item IK1550
+\end{itemize}
+--------\-\\
+More info
+\begin{itemize}
+\item What are the requirements for successfully completing an exercise?
+\todo[inline]{\footnotesize
+What information about a student's progress in or success with the exercise should (or could) be communicated back to the LMS?
+}
+\item How are these requirements met by the chosen technologies?
+\end{itemize}
+
+\section{LXC}\label{sec_LXC}
+A container is a light weight operating system running inside the host system, executing instructions native to the core CPU, eliminating the need for instruction level emulation or just in time compilation \cite{dua_virtualization_2014}. \ac{LXC}\cite{url_lxc} is an operating-system-level virtualization method for running multiple isolated Linux systems (containers) on a control host using a single Linux kernel. It's purpose is to virtualize a single application rather than a whole operating system inside a virtual machine. \ac{LXC} uses cgroups\footnote{
+Control groups (cgroups) is a Linux kernel feature that is responsible for managing resources such as CPU, memory, disk I/O, network, etc.
+} to isolate resources such as CPU, memory, network, etc., and namespaces\footnote{
+A namespace wraps a global system resource (process IDs, mount points, network devides, stacks, ports, etc.) in an abstraction that makes it accessible to the processes within the namespace that they have their own isolated instance of the global resource. Changes to the global resource are visible to other processes that are members of the namespace, but are invisible to other processes \cite{man_namespaces}.
+} to isolate the application from the operating system \cite{rosen2014linux}.
+\todo{\footnotesize This has to be re-written}
+
+Docker \cite{url_docker} is a Linux container engine, that provides the ability to manage Linux containers as self contained images. Docker utilizes LXC for the container implementation, has image management capabilities, and implements a Union File System (UnionFS). Docker features resource isolation via cgroups and namespaces, network and file system isolation through LXC functionality, and allows managing the lifecycle of a container. \cite{dua_virtualization_2014}
+\todo[inline]{\footnotesize that used to be the deal, now it uses libcontainer}
+Docker is a project by dotCloud now Docker Inc released in March 2013, initially based on the LXC project to build single application containers. Docker has now developed their own implementation libcontainer that uses kernel namespaces and cgroups directly.
+
+
+
+\todo[inline]{\footnotesize This should describe how the user can configure and deploy a container to realize a specific TP with a desired configuration.}
+
+
+\section{Related work}
+\todo[inline]{There has to be text here to introduce each of the subsections.}
+\subsection{EDURange}
+Designing on\nobreakdash-line training environments for the field of cyber security requires to overcome technical constraints, such as high availability and scalability, and pedagogical limitations, such as teaching analysis skills to understand complex systems and concepts via practicing \cite{boesen_edurange:_2014}. EDURange addresses these issues by designing an open source framework that provides interactive security exercises in an elastic cloud environment \cite{edurange_webpage}. 
+
+EDURange is a software framework, designed to work on Amazon \ac{EC2} \cite{aws_ec2}. It allows teachers to easily build and scale dynamic virtual environments to host cybersecurity training \cite{edurange_github}. This framework provides ease of use for instructors, by offering the flexibility to specify exercises at a high level and allowing the instructor to configure different aspects of the training scenarios in order to provide a tailored learning experience that focuses on analysis skills.
+
+\subsection{GLUE!}
+\ac{GLUE!} is a middle\nobreakdash-ware integration architecture that aims to standardize the integration of existing external learning tools into several \acp{LMS} \cite{glue}. It facilitates the instantiation and enactment of collaborative learning situations within \acp{LMS}, by using the distinctive administrative features of these systems to manage of users and groups.
+\ac{LTI} or \ac{SCROM} are specifications for the integration of external learning tools into an \ac{LMS}. Each \ac{LMS} usually supports a single interoperability specification; thus, developing a universal external tool requires a considerable development effort to cover the different standards. In contrast, \ac{GLUE!} proposes a software architecture that takes advantage of the common integration features of \acp{LMS} to integrate multiple existing learning tools into multiple \acp{LMS}.
+
+\subsection{edX}
+
+\subsection{INGInious}
+Programming exercises are the most common form of practice for students learning computer science. Traditionally, the evaluation of these exercises, requires grading reports, reading, and testing source code, thus making it time consuming, especially for large classrooms. INGInious \cite{inginious_homepage,inginious_github, inginious_doc,inginious_paper} is a software framework that empowers instructors to easily construct coding tasks that are automatically evaluated with unit tests. The framework consists of two main components, the frontend, and the backend. The frontend provides a web interface where students perform programming tasks, and an administration module that allows instructors to write these tasks. The backend is responsible for running and grading the code inside easily customizable Linux containers, thus supporting tasks in any programming language that can run in a Linux machine. 
+
+One of the main features of INGInious is that it can be used either as a stand\nobreakdash-alone web application or as an external learning tool that is integrated into an \ac{LMS} using the \ac{LTI} specification.
+
+\todo[inline]{\footnotesize
+* Could argue why it is using docker containers but I will be doing that for my architecture. \\
+* I can possibly show how a task and its evaluation script are defined
+}
+
+\section{Summary}
+\todo[inline]{\footnotesize
+It is nice to bring this chapter to a close with a summary. For example, you might include a table that summarizes the ideas of others and the advantages and disadvantages of each ? so that later you can compare your solution to each of these. This will also help guide you in defining the metrics that you will use for your evaluation.
+}
+
+\chapter{Methodology}
+\todo[inline]{\footnotesize
+What scientific or engineering methodology are you going to use and why have you chosen this method. What other methods did you consider and why did you reject them.
+What are your goals? (What should you be able to do as a result of your solution - which could not be done well before you started?)
+What you are going to do? How? Why? For example, if you have implemented an artifact what did you do and why? How will your evaluate it.
+}
+..\\
+\todo[inline,caption={}]{\footnotesize
+You might explain why Canvas is being used:
+\begin{itemize}
+\item it is likely that this will be the LMS at KTH
+\item it is open source so you were able to build your own instance and experiment with it.
+\end{itemize}
+}
+
+\todo[inline]{Rewrite}
+In the design science paradigm, the rigor cycle provides past knowledge to the research project to ensure its innovation. Researchers to thoroughly research and reference the knowledge base in order to guarantee that the designs produced are research contributions and not routine designs based upon the application of well-known processes. The central Design Cycle iterates between the core activities of building and evaluating the design artifacts and processes of the research \cite{hevner_design_2010}, until the acceptance criteria, as defined in the Relevance Cycle, are met.
+
+
+\section{Research Process}
+This thesis project is carried out using the Design Science research method. This type of research focuses on the design and construction of \ac{IT} artifacts that have utility in the real world, in this case as an application environment, and aim to improve domain\nobreakdash-specific systems and processes. In the context of this research, the real world problem is the lack of interactive virtual laboratory environments in the form of \ac{elearning} tools. More specifically, the major problem is to integrate such tools within an \ac{LMS}, to assist the learning and teaching of an on\nobreakdash-line Internetworking course.
+
+\todo[inline]{Rewrite}
+Despite the fact that there is no strictly defined process for performing, design science research, there are three closely related cycles of activities that can be used as guidelines for designing, constructing and evaluating an artifact. The relevance cycle initiates the application context that not only provides the requirements for the research (e.g problem to be addressed) as inputs but also defines acceptance criteria for the evaluation of the research results, thus establishing a bridge between the contextual environment of the research project with the design science activities. It is often useful for defining the application context, to describe the people and the organizational and technical systems involved in the domain of the problem. In the context of this problem, the main inputs are the Internetworking course along with the functional and pedagogical requirements of its laboratory environments, the instructor and student user roles that are involved in designing a learning tool, and finally, Canvas \ac{LMS} and its support for integrating external learning tools.
+\todo[inline]{\footnotesize These inputs can be expanded to functional and user requirements of the artifact in a section later on.}
+
+The rigor cycle of Design Science research provides past knowledge to the project to ensure its innovation. Like traditional literature research, it guides the researcher to identify existing artifacts and processes in the application domain, solutions and design practices to relevant problems, and establishes a knowledge base that ensures the uniqueness and originality of the designed artifact. Here, the rigor cycle is represented by the background literature review, that validates the lack of existing solutions when it comes to domain specific laboratory environments that are offered by \acp{LMS}, and presents common practices and design methodologies for constructing and integrating such environments in similar information technology domains like cybersecurity.
+
+Finally the design cycle, is the core of the research method, is tightly bound to the rigor and relevance cycle because of its iterative nature, that generates artifacts according to design specifications and evaluates them against requirements until the acceptance criteria of the research are met.
+
+
+\section{Research Paradigm}
+HTTP traffic widget from FORGE http://ict-forge.eu/wp-content/uploads/2016/01/FORGE-2015-P-D312-Final.pdf
+
+%\section{Data collection}
+%(This should also show that you are aware of the social and ethical concerns that might be relevant to your data collection method.).
+%
+%\subsection{Sampling}
+%\subsection{Sample size}
+%\subsection{Target Population}
+%
+%\section{Experimental design}
+%\subsection{Test environment}
+%
+%\subsection{Hardware/Software to be used}
+%
+%\section{Assessing reliability and validity of the data collected}
+%
+%\subsection{Reliability}
+%
+%\subsection{Validity}
+%
+%\section{Planned Data Analysis}
+%\subsection{Data Analysis Technique}
+%\subsection{Software Tools}
+%
+%\section{Evaluation Framework}
+
+
+\chapter{Implementation}
+
+
+% % % % % % % % % % % % % % % % % % %
+%		CHAPTER ANALYSIS			%
+% % % % % % % % % % % % % % % % % % %
+\chapter{Analysis}
+...
+
+\section{Major results}
+...
+
+\section{Reliability Analysis}
+...
+
+\section{Validity Analysis}
+...
+		
+\section{Discussion}
+...
+
+% % % % % % % % % % % % % % % % % % %
+%	CHAPTER CONCLUSIONS				%
+% % % % % % % % % % % % % % % % % % %
+\chapter{Conclusions and Future Work}
+...
+
+\section{Conclusions}
+...
+
+\section{Limitations}
+...
+
+\section{Future work}
+...
+
+\section{Reflections}
+... 
+
+% % % % % % % % % % % % % % % % % % %
+%	CITATIONS - BIBLIOGRAPHY		%
+% % % % % % % % % % % % % % % % % % %
+\renewcommand\bibname{References}
+\bibliographystyle{unsrt} 
+\bibliography{references}
+% % % % % % % % % % % % % % % % % % %
+%			APPENDICES				%
+% % % % % % % % % % % % % % % % % % %
+\begin{appendices}
+\addappheadtotoc
+\chapter{Appendix Name X}\label{}
+content X
+
+\end{appendices}
+
+\end{document}

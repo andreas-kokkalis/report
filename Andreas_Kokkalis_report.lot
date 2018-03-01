@@ -1,0 +1,15 @@
+\select@language {english}
+\select@language {english}
+\select@language {swedish}
+\select@language {english}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Routes of a Ruby Sinatra TP}}{12}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Endpoints of the HTTP Web Server}}{44}
+\contentsline {table}{\numberline {4.2}{\ignorespaces List of implemented domain models}}{69}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Types of implemented tests per Endpoint}}{94}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Average execution time for each endpoint}}{95}
+\addvspace {10pt}
+\addvspace {10pt}

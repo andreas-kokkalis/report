@@ -1,0 +1,33 @@
+\select@language {english}
+\select@language {english}
+\select@language {swedish}
+\select@language {english}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Overview of LTI}}{9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A TP using LIS services}}{10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Adding an external application to Canvas}}{18}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Configuring an assignment to use an external tool}}{18}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces States of the container lifecycle}}{27}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Shell In A Box emulator running in a web browser window}}{29}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces High Level Overview of the System Architecture}}{39}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architecture of the system components}}{40}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sample configuration of a course and its participants in Canvas LMS}}{41}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sign in form - LTI Tool Client Interface}}{52}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Tool Client page ``List of Images"}}{54}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Tool Client page ``Image History"}}{56}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Tool Client page ``Run Container"}}{58}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Tool Client page ``Commit Container"}}{59}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Tool Client page ``Delete Container"}}{60}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Tool Client page ``Delete Image"}}{61}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Configuration of the TP in Canvas}}{65}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Assignment Description that could be placed into the Canvas LMS course (based upon the first part of the assignment in \cite {assignment_mit} - this material appears here based upon CC BY 3.0 US)}}{66}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Laboratory environment via Canvas LMS}}{67}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces The four layers of the Clean Architecture}}{69}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces The source code directory tree of this project}}{71}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Sample of the go tool cover HTML output}}{81}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Overview of project's test coverage report from codecov.io}}{82}
+\addvspace {10pt}
+\addvspace {10pt}

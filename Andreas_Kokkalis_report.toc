@@ -1,0 +1,67 @@
+\changetocdepth {2}
+\select@language {english}
+\select@language {english}
+\select@language {swedish}
+\select@language {english}
+\contentsline {chapter}{List of Tables}{}
+\contentsline {chapter}{\chapternumberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Background}{1}
+\contentsline {section}{\numberline {1.2}Problem definition}{2}
+\contentsline {section}{\numberline {1.3}Goals}{3}
+\contentsline {section}{\numberline {1.4}Research Methodology}{4}
+\contentsline {section}{\numberline {1.5}Delimitations}{4}
+\contentsline {section}{\numberline {1.6}Structure of the thesis}{5}
+\contentsline {chapter}{\chapternumberline {2}Background}{7}
+\contentsline {section}{\numberline {2.1}LMS}{7}
+\contentsline {section}{\numberline {2.2}LTI}{8}
+\contentsline {section}{\numberline {2.3}Sinatra DSL}{10}
+\contentsline {section}{\numberline {2.4}LTI tool provider}{12}
+\contentsline {subsection}{\numberline {2.4.1}Integration of an external application into Canvas LMS}{17}
+\contentsline {subsection}{\numberline {2.4.2}Securing the connection between a TP and a TC}{19}
+\contentsline {section}{\numberline {2.5}LTI applications}{22}
+\contentsline {section}{\numberline {2.6}Linux Containers}{23}
+\contentsline {section}{\numberline {2.7}Web based shell emulators}{28}
+\contentsline {section}{\numberline {2.8}Related work}{31}
+\contentsline {subsection}{\numberline {2.8.1}EDURange}{31}
+\contentsline {subsection}{\numberline {2.8.2}GLUE!}{31}
+\contentsline {subsection}{\numberline {2.8.3}INGInious}{31}
+\contentsline {section}{\numberline {2.9}Summary}{34}
+\contentsline {chapter}{\chapternumberline {3}Methodology}{35}
+\contentsline {section}{\numberline {3.1}Research Process}{35}
+\contentsline {section}{\numberline {3.2}Evaluation Process}{35}
+\contentsline {chapter}{\chapternumberline {4}Implementation}{39}
+\contentsline {section}{\numberline {4.1}Software architecture}{39}
+\contentsline {subsection}{\numberline {4.1.1}Canvas LMS}{40}
+\contentsline {subsection}{\numberline {4.1.2}Web server}{42}
+\contentsline {subsection}{\numberline {4.1.3}Docker Remote API Consumer}{45}
+\contentsline {subsection}{\numberline {4.1.4}Session Storage}{47}
+\contentsline {subsection}{\numberline {4.1.5}Persistent Storage}{48}
+\contentsline {subsection}{\numberline {4.1.6}Binding network ports of the host system to container ports}{49}
+\contentsline {section}{\numberline {4.2}LTI Tool Client}{51}
+\contentsline {subsection}{\numberline {4.2.1}Authentication}{51}
+\contentsline {subsection}{\numberline {4.2.2}Home Page - List of Images}{54}
+\contentsline {subsection}{\numberline {4.2.3}Image History}{55}
+\contentsline {subsection}{\numberline {4.2.4}Run Container page}{56}
+\contentsline {subsection}{\numberline {4.2.5}Commit Container page}{59}
+\contentsline {subsection}{\numberline {4.2.6}Delete Container page}{60}
+\contentsline {subsection}{\numberline {4.2.7}Delete Image page}{60}
+\contentsline {section}{\numberline {4.3}LTI Tool Provider}{61}
+\contentsline {subsection}{\numberline {4.3.1}Configuration of an Assignment}{64}
+\contentsline {subsection}{\numberline {4.3.2}Student accessing a laboratory environment}{67}
+\contentsline {section}{\numberline {4.4}Evaluation}{68}
+\contentsline {subsection}{\numberline {4.4.1}Unit testing in Go}{71}
+\contentsline {subsection}{\numberline {4.4.2}Generating a test coverage report}{80}
+\contentsline {subsection}{\numberline {4.4.3}Integration tests}{82}
+\contentsline {subsection}{\numberline {4.4.4}Summary of tests}{93}
+\contentsline {chapter}{\chapternumberline {5}Conclusions and Future Work}{97}
+\contentsline {section}{\numberline {5.1}Conclusions}{97}
+\contentsline {section}{\numberline {5.2}Future work}{99}
+\contentsline {subsection}{\numberline {5.2.1}Scalability}{99}
+\contentsline {subsection}{\numberline {5.2.2}Web based shell emulators}{99}
+\contentsline {subsection}{\numberline {5.2.3}Tool Client user interface design}{100}
+\contentsline {subsection}{\numberline {5.2.4}Evaluation of the Periodic Checker module}{101}
+\contentsline {subsection}{\numberline {5.2.5}Desired Features}{101}
+\contentsline {subsection}{\numberline {5.2.6}Assignment evaluation}{102}
+\contentsline {chapter}{References}{103}
+\contentsline {chapter}{Appendices}{110}
+\contentsline {appendix}{\chapternumberline {A}Development and testing setup}{111}
